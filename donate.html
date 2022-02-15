@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <script>
+            function valid(){
+                window.alert("your tranction is successfully completed \n Thank you to donate");
+            }
+        </script>
+
+    </head>
+    <style>
+        body{
+            background-image: url("natu.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+        }
+        h1{
+            text-align: center;
+        }
+        
+        .payment{
+            align-content: center;
+            width:30%;
+            margin:0 auto;
+            padding:25px 15px 25px 15px;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+        }
+        input[type=number] {
+            background:transparent;
+            width: 100%;
+            padding: 5px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid red;
+          }
+          .date input[type=number]{
+              width:40%;
+          }
+          .icon-container {
+            margin-bottom: 10px;
+            padding: 0px 0;
+            font-size: 24px;
+          }
+          .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  align-items: center;
+}
+.button1 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  align-items: center;
+}
+    </style>
+    <body>
+        <h1>Donation section</h1>
+        <div class="payment">
+        <form onclick="return valid()">
+            <input  type="radio" name="pay" class="a1" id="card radio" >
+            <label for="card radio">Credit / Debit / ATM Card</label><br><br>
+            <h3>Accepted Cards</h3>
+            <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+            <label for="card">Card number</label>
+            <input class="card" type="number" name="card" id="card"><br><br>
+            <table>
+                <tr>
+                    <td>
+                    <label for="card">Expiry Date</label>
+                    <input class="date" type="number" name="card" id="expdt"><br>
+                    </td>
+                    <td>
+                    <label for="card">CVV</label>
+                    <input class="date" type="number" name="card" id="expdt"><br>
+                    </td>
+            </tr>
+            </table>
+            <input type="radio" name="pay" class="a1" id="upi" >
+            <label for="upi">UPI</label><br><br>
+            <input type="radio" name="pay" class="a1" id="wallets" >
+            <label for="wallets">wallets</label><br><br>
+            <input type="radio" name="pay" class="a1" id="banking" >
+            <label for="banking">Net Bankings</label><br><br>
+            <input type="radio" name="pay" class="a1" id="cod" ><br>
+            <button type="submit" class="button1" <a href="home.html">To Go Back</a></button>
+           <center><button class="button" type="submit">Submit</button></center> 
+        </form>
+    </div>
+        
+    </body>
+</html>
